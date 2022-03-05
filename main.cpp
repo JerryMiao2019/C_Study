@@ -1,16 +1,19 @@
 #include <iostream>
 #include <cmath>
 
-int returnFor(int n)
+int light_year_fun(double light_year)
 {
-    int m = n * n;
-    return m;
+    int astronomical_units = light_year * 63240;
+    return astronomical_units;
 }
 
 int main()
 {
     using namespace std;
-    cout << returnFor(10192 * 8);
+    double light_years;
+    cout << "Enter the number of light years: ";
+    cin >> light_years;
+    cout << light_years << " light years = " << light_year_fun(light_years) << " astronomical units." << endl;
     return 0;
 }
 
